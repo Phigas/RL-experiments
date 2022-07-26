@@ -28,3 +28,13 @@ Training successful and seemed done but doomguy gets stuck on the left sometimes
 Doomguy is in circle and can turn and shoot. Has to defend himself from monsters that come from all directions.
 
 Trained well and showed significant improvement. But still room for improvement.
+
+### 2.3. corridor
+
+Doomguy needs to walk through a corridor with enemies on the sides. Originally only reward for advancing but this is changed in the code.
+
+Also added a learning schedule to improve learning results.
+Since the simulation was more difficult here the training hyperparmeters were tuned with optuna.
+
+When simulating on easiest difficulty agent was not really interested in killing the monsters.
+Will try increasing reward for killing monsters.
