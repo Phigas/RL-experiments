@@ -36,5 +36,7 @@ Doomguy needs to walk through a corridor with enemies on the sides. Originally o
 Also added a learning schedule to improve learning results.
 Since the simulation was more difficult here the training hyperparmeters were tuned with optuna.
 
-When simulating on easiest difficulty agent was not really interested in killing the monsters.
-Will try increasing reward for killing monsters.
+1. When simulating on easiest difficulty agent was not really interested in killing the monsters (run name: PPO5)
+2. Skipping to difficulty 3, increasing kill reward and decreasing being hit reward (run name: PPO9)
+
+changing torch version to 1.11 because of [bug](https://github.com/Lightning-AI/lightning/issues/13695)
