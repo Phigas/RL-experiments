@@ -38,5 +38,7 @@ Since the simulation was more difficult here the training hyperparmeters were tu
 
 1. When simulating on easiest difficulty agent was not really interested in killing the monsters (run name: PPO5)
 2. Skipping to difficulty 3, increasing kill reward and decreasing being hit reward (run name: PPO9)
+3. Still just running through, increasing difficulty to 5 (run name: PPO11)
+4. Now ignoring the monsters even more. Should start training from beginning
 
 changing torch version to 1.11 because of [bug](https://github.com/Lightning-AI/lightning/issues/13695)
