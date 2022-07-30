@@ -42,3 +42,16 @@ Since the simulation was more difficult here the training hyperparmeters were tu
 4. Now ignoring the monsters even more. Should start training from beginning
 
 changing torch version to 1.11 because of [bug](https://github.com/Lightning-AI/lightning/issues/13695)
+
+## 3. Street Fighter
+
+Using gym retro (required python 3.5-3.7). And using optuna.
+
+Found ROM [here](https://ia800201.us.archive.org/view_archive.php?archive=/7/items/No-Intro-Collection_2016-01-03_Fixed/Sega%20-%20Mega%20Drive%20-%20Genesis.zip)
+
+because of bug with `env.render()`
+
+```bash
+pip uninstall gym
+pip install gym==0.21.0
+```
