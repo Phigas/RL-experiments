@@ -10,12 +10,17 @@ For storage reasons the checkpoints will not be uploaded.
 
 - Python 3.7
 - gym 0.21.0
+- gym retro
 - cuda 3.11
 - pytorch 1.11
-- Stable Baselines3
+- Stable Baselines3 (RL algos)
 - numpy
 - matplotlib
 - opencv
+- probably protobuf 3.20.*
+- pydirectinput
+- pytesseract (for character recognition)(have to install tesseract ocr and with pip)
+- mss (multiple screenshots)
 - plus other stuff
 
 ## 1. mario
