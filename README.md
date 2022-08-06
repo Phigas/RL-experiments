@@ -6,6 +6,18 @@ Based on the tutorial by Nicholas Renotte https://www.youtube.com/watch?v=dWmJ5C
 
 For storage reasons the checkpoints will not be uploaded.
 
+### Requirements
+
+- Python 3.7
+- gym 0.21.0
+- cuda 3.11
+- pytorch 1.11
+- Stable Baselines3
+- numpy
+- matplotlib
+- opencv
+- plus other stuff
+
 ## 1. mario
 
 Use nespy emulator enviroment to do simple model. Reward for moving forward.
@@ -49,9 +61,12 @@ Using gym retro (required python 3.5-3.7). And using optuna.
 
 Found ROM [here](https://ia800201.us.archive.org/view_archive.php?archive=/7/items/No-Intro-Collection_2016-01-03_Fixed/Sega%20-%20Mega%20Drive%20-%20Genesis.zip)
 
-because of bug with `env.render()`
+Storing the different trial results in an sqlite database.
 
-```bash
-pip uninstall gym
-pip install gym==0.21.0
-```
+## 4. Chrome Dino
+
+Build the entire game environment from scratch. Libraries used:
+- MMS to get screen capture
+- opencv for preprocessing
+- Tesseract OCR to extract game over text
+- stable baselines for the RL algorithm (DQN model)
