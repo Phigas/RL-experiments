@@ -75,3 +75,12 @@ Build the entire game environment from scratch. Libraries used:
 - opencv for preprocessing
 - Tesseract OCR to extract game over text
 - stable baselines for the RL algorithm (DQN model)
+
+One step is quite slow (.4s). A couple steps are taken to remedy this:
+- changing from pydirectinput to pyautogui (~.2s improvement)
+- changing how the `get_done` function works (~.07s improvement)
+    - replacing pytesseract with a function that calculates the similarity between a captured game over image and the captured image
+    - similarity is calculated as $\sum (x - y)^2$
+- frame stacking is added to help tackle the timing issues
+
+For a future version it might help to give the model the ability to hold the button. It may also help to improve the frame rate stability.
